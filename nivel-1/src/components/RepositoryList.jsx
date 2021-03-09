@@ -19,7 +19,7 @@ export function RepositoryList() {
           <strong>unform</strong>
           <p>Forms in React</p>
 
-          <a href="">
+          <a>
             Acessar repositório
           </a>
         </li>
