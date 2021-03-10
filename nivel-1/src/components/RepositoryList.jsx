@@ -1,4 +1,11 @@
-const repositoryName = 'unform2'
+import { RepositoryItem } from "./RepositoryItem";
+import '../styles/Repositories.scss'
+
+const repository = {
+  name: 'Traveler',
+  description: 'Forms in React',
+  link: 'https://github.com/gitirana/traveler-web'
+}
 
 export function RepositoryList() {
   return (
@@ -6,41 +13,14 @@ export function RepositoryList() {
       <h1>Lista de repositório</h1>
 
       <ul>
-        <li>
-          <strong>{repositoryName}</strong>
-          <p>Forms in React</p>
-
-          <a href="">
-            Acessar repositório
-          </a>
-        </li>
-
-        <li>
-          <strong>unform</strong>
-          <p>Forms in React</p>
-
-          <a>
-            Acessar repositório
-          </a>
-        </li>
-
-        <li>
-          <strong>unform</strong>
-          <p>Forms in React</p>
-
-          <a href="">
-            Acessar repositório
-          </a>
-        </li>
-
-        <li>
-          <strong>unform</strong>
-          <p>Forms in React</p>
-
-          <a href="">
-            Acessar repositório
-          </a>
-        </li>
+        <RepositoryItem
+          repository={repository}
+        />
+        <RepositoryItem repository={repository}/>
+        <RepositoryItem repository={repository}/>
+        <RepositoryItem repository={repository}/>
+        <RepositoryItem repository={repository}/>
+        <RepositoryItem repository={repository}/>
       </ul>
     </section>
   )
